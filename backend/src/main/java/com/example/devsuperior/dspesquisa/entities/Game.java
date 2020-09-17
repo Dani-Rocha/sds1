@@ -16,7 +16,7 @@ import javax.persistence.Table;
 import com.example.devsuperior.dspesquisa.entities.enums.Plataform;
 
 @Entity
-@Table(name = "tb_game")
+@Table(name="tb_game")
 
 public class Game implements Serializable  {
 	
@@ -30,11 +30,11 @@ public class Game implements Serializable  {
 	
 	
 	@ManyToOne
-	@JoinColumn(name = "genre_id")
+	@JoinColumn(name ="genre_id")
 	private Genre genre;
 	
 	
-	@OneToMany(mappedBy = "game")
+	@OneToMany(mappedBy ="game")
 	private List<Record> records = new ArrayList<>();
 	
 	

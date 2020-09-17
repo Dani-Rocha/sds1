@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_genre")
+@Table(name="tb_genre")
 public class Genre implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -21,7 +21,7 @@ public class Genre implements Serializable {
 	private long id; 
 	private String name;
 	
-	@OneToMany(mappedBy = "genre")
+	@OneToMany(mappedBy="genre")
 	 private List<Game> games = new ArrayList<>();
 	
 	

@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_record")
+@Table(name="tb_record")
 
 public class Record implements Serializable {
 
@@ -26,7 +26,7 @@ public class Record implements Serializable {
 	private Instant moment;
 	
 	@ManyToOne
-	@JoinColumn(name = "game_id")
+	@JoinColumn(name="game_id")
 	private Game game;
 	
 	
